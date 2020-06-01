@@ -21,7 +21,7 @@ const TemplateWrapper = ({ children }) => {
           rel="stylesheet"
           type="text/css"
         />
-        <title>Newspaper Style Design Experiment</title>
+        <title>Calvijn Online</title>
         <meta name="theme-color" content="#fff" />
 
         <meta property="og:type" content="business.business" />
@@ -31,16 +31,14 @@ const TemplateWrapper = ({ children }) => {
           property="og:image"
           content={`${withPrefix("/")}img/og-image.jpg`}
         />
-        <meta name="viewport" content="width=1200px" />
+        <meta name="viewport" content="width=1300" />
       </Helmet>
       {/*<Navbar />*/}
       {/*<div>{children}</div>*/}
       {/*<BlogRoll />*/}
       <div className="head">
-        <div className="headerobjectswrapper">
-          <div className="weatherforcastbox">
-            <img src={logo} />
-          </div>
+        <div className="topheader">
+          <img src={logo} />
           <header>{title}</header>
         </div>
 

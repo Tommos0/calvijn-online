@@ -32,9 +32,21 @@ export const Articles = () => (
     `}
     render={(data, count) => (
       <>
-        {data.allMarkdownRemark.edges.map((edge) => (
-          <Article key={edge.node.id} data={edge.node} />
-        ))}
+        <div className="collumn">
+          {data.allMarkdownRemark.edges.map((edge) => (
+            <Article key={edge.node.id} data={edge.node} />
+          ))}
+        </div>
+        <div className="collumn">
+          {data.allMarkdownRemark.edges.reverse().map((edge) => (
+            <Article key={edge.node.id} data={edge.node} />
+          ))}
+        </div>
+        <div className="collumn">
+          {data.allMarkdownRemark.edges.reverse().map((edge) => (
+            <Article key={edge.node.id} data={edge.node} />
+          ))}
+        </div>
       </>
     )}
   />

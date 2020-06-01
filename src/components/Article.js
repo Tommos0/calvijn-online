@@ -4,16 +4,16 @@ import { HTMLContent } from "./Content";
 export default (props) => {
   console.log(props);
   return (
-    <div className="collumn">
-      <div className="head">
+    <article>
+      <art className="head">
         <span className="headline hl3">{props.data.frontmatter.title}</span>
         <p>
           <span className="headline hl4">
             door {props.data.frontmatter.author}
           </span>
         </p>
-      </div>
+      </art>
       <HTMLContent content={props.data.html} />
-    </div>
+    </article>
   );
 };

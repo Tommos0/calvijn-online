@@ -12,61 +12,54 @@ body{
   background-color: #f9f7f1;
   width: 1200px;
   margin: 0 auto;
-  padding: 20px;
+  padding-top: 2em;
 }
 header{
   font-family: 'Playfair Display', serif;
   font-weight: 900;
   font-size: 80px;
   text-transform: uppercase;
-  display: inline-block;
-  line-height: 72px;
-  margin-bottom: 20px;
-
 }
 p{
   margin-top: 0;
   margin-bottom: 20px;
 }
 .head{
-  text-align: center;
   position: relative;
-
-
-}
-
-.headerobjectswrapper{
 }
 
 .subhead{
+  text-align: center;
   text-transform: uppercase;
   border-bottom: 2px solid #2f2f2f;
   border-top: 2px solid #2f2f2f;
   padding: 12px 0 12px 0;
-
 }
-.weatherforcastbox{
-  position: relative;
-  width: 12%;
-  left: 10px;
-  border: 3px double #2f2f2f;
-  padding: 10px 15px 10px 15px;
-  line-height: 20px;
-  display: inline-block;
-  margin: 0 50px 20px -360px;
+
+.topheader{
+  display: flex;
+  margin-bottom: 1em;
   img {
-    width: 100%;
-    height: 100%;
+    width: 10%;
+    height: 10%;
+    border: 3px double #2f2f2f;
+    margin-right: 2em;
   }
 }
 .content{
-  //font-size: 0;
-  //line-height: 0;
-  //word-spacing: -.31em;
   display: inline-block;
-  margin: 30px 2% 0 2%;
+  margin: 1em 0;
 }
 
+article + article {
+  border-top: 1px dashed black;
+  padding-top: 2em;
+}
+
+.collumns {
+  display: flex;
+  justify-content: space-between;
+}
 .collumn{
   font-size: 14px;
   line-height: 20px;
@@ -76,6 +69,13 @@ p{
   vertical-align: top;
   margin-bottom: 50px;
   transition: all .7s;
+  img {
+    max-width: 100%;
+    padding: 1em 0;
+  }
+  p {
+    text-align: justify;
+  }
 }
 .collumn + .collumn {
   border-left: 1px solid #2f2f2f;
@@ -220,7 +220,13 @@ p{
   display: block;
   margin: 40px 0 40px 0;
   font-feature-settings: "liga", "dlig";
-
+  p {
+    text-align: center;
+    margin: 0;
+    &:before, &:after {
+      content: "'"
+    }
+  }
 }
 .collumn blockquote:before{
   border-top: 1px solid #2f2f2f;
