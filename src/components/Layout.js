@@ -33,9 +33,6 @@ const TemplateWrapper = ({ children }) => {
         />
         <meta name="viewport" content="width=1300" />
       </Helmet>
-      {/*<Navbar />*/}
-      {/*<div>{children}</div>*/}
-      {/*<BlogRoll />*/}
       <div className="head">
         <div className="topheader">
           <img src={logo} />
@@ -47,6 +44,19 @@ const TemplateWrapper = ({ children }) => {
         </div>
       </div>
       <div className="content">
+        <div style={{ marginTop: "2em", marginBottom: "2em" }}>
+          <p>
+            Welkom bij de Calvijn online! Welkom bij de Calvijn online! Welkom
+            bij de Calvijn online!Welkom bij de Calvijn online! Welkom bij de
+            Calvijn online!
+          </p>
+          <p>
+            Welkom bij de Calvijn online!Welkom bij de Calvijn online! Welkom
+            bij de Calvijn online!Welkom bij de Calvijn online!Welkom bij de
+            Calvijn online! Welkom bij de Calvijn online!Welkom bij de Calvijn
+            online!Welkom bij de Calvijn online!
+          </p>
+        </div>
         <div className="collumns">
           <Articles />
         </div>

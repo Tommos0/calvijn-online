@@ -2,7 +2,6 @@ import React from "react";
 import { HTMLContent } from "./Content";
 
 export default (props) => {
-  console.log(props);
   return (
     <article>
       <art className="head">
