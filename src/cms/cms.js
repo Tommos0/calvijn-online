@@ -40,7 +40,7 @@ CMS.registerEditorComponent({
     return (
       '<img src="http://img.youtube.com/vi/' +
       obj.id +
-      '/maxresdefault.jpg" alt="Youtube Video"/>'
+      '/0.jpg" alt="Youtube Video"/>'
     );
   },
 });

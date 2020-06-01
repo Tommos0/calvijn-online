@@ -5,6 +5,7 @@ import Navbar from "../components/Navbar";
 import "./all.scss";
 import useSiteMetadata from "./SiteMetadata";
 import { withPrefix } from "gatsby";
+import BlogRoll from "./BlogRoll";
 
 const TemplateWrapper = ({ children }) => {
   const { title, description } = useSiteMetadata();
@@ -33,6 +34,7 @@ const TemplateWrapper = ({ children }) => {
       </Helmet>
       {/*<Navbar />*/}
       {/*<div>{children}</div>*/}
+      <BlogRoll />
       <div className="head">
         <div className="headerobjectswrapper">
           <div className="weatherforcastbox">
