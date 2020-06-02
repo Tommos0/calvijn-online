@@ -46,16 +46,21 @@ export const Articles = () => {
   ];
 
   const nodes = data.allMarkdownRemark.edges.map((edge) => edge.node);
+
+  const noColumnItems = nodes.filter(
+    (node) => !col1.concat(col2).concat(col3).includes(node.fields.slug)
+  );
+
   console.log(
     "article IDs not in column: ",
-    nodes
-      .map((node) => node.fields.slug)
-      .filter((slug) => !col1.concat(col2).concat(col3).includes(slug))
+    noColumnItems.map((node) => node.fields.slug)
   );
 
   const col1items = nodes.filter((node) => col1.includes(node.fields.slug));
   const col2items = nodes.filter((node) => col2.includes(node.fields.slug));
-  const col3items = nodes.filter((node) => col3.includes(node.fields.slug));
+  const col3items = nodes
+    .filter((node) => col3.includes(node.fields.slug))
+    .concat(noColumnItems);
 
   return (
     <>
