@@ -2,7 +2,7 @@ import React from "react";
 import { Helmet } from "react-helmet";
 import "./all.scss";
 import useSiteMetadata from "./SiteMetadata";
-import { graphql, StaticQuery, withPrefix } from "gatsby";
+import { withPrefix } from "gatsby";
 import { Articles } from "./Articles";
 
 import logo from "../img/calvijn-logo.png";
@@ -46,15 +46,19 @@ const TemplateWrapper = ({ children }) => {
       <div className="content">
         <div style={{ marginTop: "2em", marginBottom: "2em" }}>
           <p>
-            Welkom bij de Calvijn online! Welkom bij de Calvijn online! Welkom
-            bij de Calvijn online!Welkom bij de Calvijn online! Welkom bij de
-            Calvijn online!
+            Welkom bij Calvijn online! We zijn zo blij dat jullie er weer zijn!
+            Houd je goed aan de zeven gouden regels van het Calvijn.
           </p>
           <p>
-            Welkom bij de Calvijn online!Welkom bij de Calvijn online! Welkom
-            bij de Calvijn online!Welkom bij de Calvijn online!Welkom bij de
-            Calvijn online! Welkom bij de Calvijn online!Welkom bij de Calvijn
-            online!Welkom bij de Calvijn online!
+            Dit is de eerste editie van de schoolkrant. Bedankt voor al jullie
+            inzendingen. Kom vooral kijken op{" "}
+            <a href="https://calvijn-online.nl">calvijnonline.nl</a>. Wil je ook
+            graag in de schoolkrant komen? Met een filmpje, tekening, verhaal of
+            TikTok, stuur je aan{" "}
+            <a href="mailto:schoolkrant@calvijn-online.nl">
+              schoolkrant@calvijn-online.nl
+            </a>
+            .
           </p>
         </div>
         <div className="collumns">

@@ -1,13 +1,11 @@
 import { graphql, StaticQuery, useStaticQuery } from "gatsby";
 import React from "react";
-import { HTMLContent } from "./Content";
 import Article from "./Article";
 
 export const Articles = () => {
   const data = useStaticQuery(graphql`
     query ArticleQuery {
       allMarkdownRemark(
-        sort: { order: DESC, fields: [frontmatter___date] }
         filter: { frontmatter: { templateKey: { eq: "article" } } }
       ) {
         edges {
@@ -31,18 +29,25 @@ export const Articles = () => {
   `);
 
   const col1 = [
+    "/article/ece-uit-3d-stuurde-deze-prachtige-foto-in/", // emiel
     "/article/anderhalve-meter/",
-    "/article/2020-06-01-de-titel-2/",
+    "/article/meester-emiel-neemt-op-originele-wijze-het-huiswerk-voor-de-eerste-klassen-nog-even-door/", //ece
+    "/article/2020-06-01-de-titel-2/", //kunst
   ];
 
   const col2 = [
-    "/article/lilly-hamsterde-aan-het-begin-van-de-coronacrisis-zoveel-mogelijk-vitamine-c-bij-elkaar/",
-    "/article/2020-06-01-de-titel-2-1/",
+    "/article/2020-06-01-de-titel-3/", // Ahlam jarig
+    "/article/de-mop-van-dina/",
+    "/article/bahar-maakte-dit-leuke-filmpje-over-haar-tijd-in-quarantaine/",
+    "/article/2020-06-01-de-titel-2-1/", // hicham
+    "/article/typisch-corona/",
   ];
 
   const col3 = [
-    "/article/2020-06-01-de-titel-3/",
-    "/article/2020-06-01-de-titel/",
+    "/article/lilly-hamsterde-aan-het-begin-van-de-coronacrisis-zoveel-mogelijk-vitamine-c-bij-elkaar/",
+    "/article/alan-walker-faded/",
+    "/article/öygü-uit-3b-wil-koreaans-chinees-en-thais-leren/",
+    "/article/2020-06-01-de-titel/", // eten
   ];
 
   const nodes = data.allMarkdownRemark.edges.map((edge) => edge.node);
@@ -56,11 +61,17 @@ export const Articles = () => {
     noColumnItems.map((node) => node.fields.slug)
   );
 
-  const col1items = nodes.filter((node) => col1.includes(node.fields.slug));
-  const col2items = nodes.filter((node) => col2.includes(node.fields.slug));
-  const col3items = nodes
-    .filter((node) => col3.includes(node.fields.slug))
+  const col1items = col1.map((link) =>
+    nodes.find((node) => node.fields.slug === link)
+  );
+  const col2items = col2.map((link) =>
+    nodes.find((node) => node.fields.slug === link)
+  );
+  const col3items = col3
+    .map((link) => nodes.find((node) => node.fields.slug === link))
     .concat(noColumnItems);
+
+  console.log(col1items.map((item) => item.fields.slug));
 
   return (
     <>
