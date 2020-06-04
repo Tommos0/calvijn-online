@@ -6,8 +6,6 @@ date: 2020-06-04T16:06:47.429Z
 ---
 De afgelopen paar weken mochten leerlingen uit jaar 1 en 2 meedoen met een tafel ontwerpwedstrijd. Op deze manier wilden wij de tafels in lokaal 1.22 en 1.24 wat vrolijker maken. De opdracht was: teken een ontwerp voor op een CKV tafel. We zijn heel blij met alle mooie ontwerpen die we hebben ontvangen. Inmiddels zijn de winnaars bekend!
 
-
-
 Winnaars die al op een tafel staan:
 
 * Amy 1E
@@ -16,8 +14,6 @@ Winnaars die al op een tafel staan:
 * Jawad 1C
 * Efe 1D
 * Adjmirie 1B
-
-
 
 Winnaars die nog op de tafels geschilderd gaan worden:
 
@@ -34,6 +30,8 @@ Winnaars die nog op de tafels geschilderd gaan worden:
 * Romaissae 1E
 * Ruveyda 2E
 
-
-
 De winnaars kunnen hun prijzen ophalen in lokaal 1.22 op maandag 15 juni.
+
+![](/img/thumbnail_20200604_163012.jpg)
+
+![](/img/thumbnail_img-20200604-wa0011.jpg)
