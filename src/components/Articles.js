@@ -30,12 +30,15 @@ export const Articles = () => {
 
   const col1 = [
     "/article/ece-uit-3d-stuurde-deze-prachtige-foto-in/", // emiel
+    "/article/calvijn-loves-sport/",
+    "/article/öygü-uit-3b-wil-koreaans-chinees-en-thais-leren/",
     "/article/anderhalve-meter/",
     "/article/meester-emiel-neemt-op-originele-wijze-het-huiswerk-voor-de-eerste-klassen-nog-even-door/", //ece
     "/article/2020-06-01-de-titel-2/", //kunst
   ];
 
   const col2 = [
+    "/article/winnaars-bekend-ontwerpwedstrijd-tafels-ckv/",
     "/article/2020-06-01-de-titel-3/", // Ahlam jarig
     "/article/de-mop-van-dina/",
     "/article/bahar-maakte-dit-leuke-filmpje-over-haar-tijd-in-quarantaine/",
@@ -46,7 +49,7 @@ export const Articles = () => {
   const col3 = [
     "/article/lilly-hamsterde-aan-het-begin-van-de-coronacrisis-zoveel-mogelijk-vitamine-c-bij-elkaar/",
     "/article/alan-walker-faded/",
-    "/article/öygü-uit-3b-wil-koreaans-chinees-en-thais-leren/",
+    "/article/team-vmr-maakte-dit-filmpje-als-steunbetuiging-voor-de-leerlingen/",
     "/article/2020-06-01-de-titel/", // eten
   ];
 

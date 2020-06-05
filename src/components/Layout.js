@@ -64,6 +64,17 @@ const TemplateWrapper = ({ children }) => {
         <div className="collumns">
           <Articles />
         </div>
+        <p>
+          Dit is de eerste editie van de schoolkrant. Bedankt voor al jullie
+          inzendingen. Kom vooral kijken op{" "}
+          <a href="https://calvijn-online.nl">calvijn-online.nl</a>. Wil je ook
+          graag in de schoolkrant komen? Met een filmpje, tekening, verhaal of
+          TikTok, stuur je aan{" "}
+          <a href="mailto:schoolkrant@calvijn-online.nl">
+            schoolkrant@calvijn-online.nl
+          </a>
+          .
+        </p>
       </div>
     </div>
   );
