@@ -53,8 +53,8 @@ const TemplateWrapper = ({ children }) => {
             Dit is de eerste editie van de schoolkrant. Bedankt voor al jullie
             inzendingen. Kom vooral kijken op{" "}
             <a href="https://calvijn-online.nl">calvijn-online.nl</a>. Wil je
-            ook graag in de schoolkrant komen? Met een filmpje, tekening,
-            verhaal of TikTok, stuur je aan{" "}
+            ook graag in de schoolkrant komen? Een filmpje, tekening, verhaal of
+            TikTok stuur je naar{" "}
             <a href="mailto:schoolkrant@calvijn-online.nl">
               schoolkrant@calvijn-online.nl
             </a>
@@ -68,8 +68,8 @@ const TemplateWrapper = ({ children }) => {
           Dit is de eerste editie van de schoolkrant. Bedankt voor al jullie
           inzendingen. Kom vooral kijken op{" "}
           <a href="https://calvijn-online.nl">calvijn-online.nl</a>. Wil je ook
-          graag in de schoolkrant komen? Met een filmpje, tekening, verhaal of
-          TikTok, stuur je aan{" "}
+          graag in de schoolkrant komen? Een filmpje, tekening, verhaal of
+          TikTok stuur je naar{" "}
           <a href="mailto:schoolkrant@calvijn-online.nl">
             schoolkrant@calvijn-online.nl
           </a>
